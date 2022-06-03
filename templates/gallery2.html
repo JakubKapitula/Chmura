@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title> Galeria2</title>
-  <meta charset="UTF-8">
-  {% extends "index2.html" %}
-  {% set active_page = "index2.html" -%}
-</head>
+{% extends "index2.html" %}
+{% block title %}Galeria2{% endblock %}
+{% set active_page = "Galeria2" -%}
 {% block body %}
 <div class="container">
   <div class="row">
@@ -70,4 +65,3 @@
   $(this).ekkoLightbox();});
 </script>
 {% endblock %}
-</html>

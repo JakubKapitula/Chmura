@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title> Strona domowa </title>
-    {% extends "index2.html" %}
-    <meta charset="UTF-8">
-    {% set active_page = "index2" -%}
-</head>
+{% extends "index2.html" %}
+{% block title %}Home{% endblock %}
+{% set active_page = "Home" -%}
 {% block body %}
 <div>
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -14,5 +9,3 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
 Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 </div>
 {% endblock %}
-</body>
-</html>

@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title> Contact </title>
-<link rel="stylesheet" href="{{ url_for('static', filename= 'css/contact_style.css') }}">
-    <meta charset="UTF-8">
-    {% extends "index2.html" %}
-    {% block title %} Kontakt {% endblock %} {% set active_page = "index2" -%}
-</head>
+{% extends "index2.html" %}
+{% block title %}Kontakt{% endblock %}
+{% set active_page = "Kontakt" -%}
 {% block body %}
 <h1>
     TO JEST STRONA CONTACT
@@ -25,4 +19,3 @@
      <div><button id="sendBtn">Wyślij</button></div>
 </form>
 {% endblock %}
-</html>
