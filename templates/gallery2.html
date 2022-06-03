@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Galeria2</title>
+  <meta charset="UTF-8">
+  {% extends "templates\index2.html" %}
+  {% set active_page = "templates\index2.html" -%}
+</head>
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm1.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm1.jpg') }}"  class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m1">
+    </a>
+    </div>
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm2.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm2.jpg') }}"  class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m2">
+    </a>
+    </div>
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm3.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm3.jpg') }}"  class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m3">
+    </a>
+    </div>
+  </div>
+</div>
+    <div class="container">
+  <div class="row">
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm4.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm4.jpg') }}"  class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m4">
+    </a>
+    </div>
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm5.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm5.jpg') }}"  class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m5">
+    </a>
+    </div>
+    <div class="col">
+<a href={{ url_for('static', filename= 'm6.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm6.jpg') }}"  class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m6">
+    </a>
+    </div>
+  </div>
+</div>
+    <div class="container">
+  <div class="row">
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm7.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm7.jpg') }}" class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m7">
+    </a>
+    </div>
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm8.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm8.jpg') }}" class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m8">
+    </a>
+    </div>
+    <div class="col">
+    <a href={{ url_for('static', filename= 'm9.jpg') }} data-toggle="lightbox" data-gallery="my-gallery">
+    <img src="{{ url_for('static', filename= 'm9.jpg') }}" class="img-fluid w-100 shadow-1-strong rounded mb-4" alt="m9">
+    </a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();});
+</script>
+{% endblock %}
+</html>
