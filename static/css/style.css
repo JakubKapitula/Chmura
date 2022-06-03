@@ -1,11 +1,11 @@
 body{
-    background-color: rgb(0, 139, 28);
+    background-color: rgb(160, 160, 160);
 }
 
 .napis{
     font-size: 200px;
     text-align: center;
-    font-style: italic;
+    font-style: bold;
 }
 .container{
 

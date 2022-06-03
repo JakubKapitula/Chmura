@@ -45,7 +45,6 @@ def sendmail():
     msg = Message('Hello', sender='yourId@gmail.com', recipients=['someone1@gmail.com'])
     msg.body = "Hello Flask message sent from Flask-Mail"
     mail.send(msg)
-    return "Sent"
     return render_template('send_mail.html')
 
 @app.errorhandler(404)
@@ -59,5 +58,5 @@ def error_not_found():
     return response
 
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(debug=True, host='0.0.0.0', port=80)
 #TODO- Zrobić kolejną galerie w oparciu o booststrap 3 rzędy 3 kolumny z zdjęciami

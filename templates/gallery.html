@@ -4,11 +4,11 @@
 <title>Galeria</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
-    {% extends "templates\index2.html" %}
-    {%  block title %} Galeria {% endblock %} {% set active_page = "templates\index2.html" -%}
+    {% extends "index2.html" %}
+    {%  block title %} Galeria {% endblock %} {% set active_page = "index2.html" -%}
 </head>
 {% block body %}
-<h1 class="napis">Moje portfolio</h1>
+<h1 class="napis">Zdjęcia do portfolio</h1>
 <div class="container">
     <div class="p1">
         <img src="{{ url_for('static', filename= 'p1.jpg') }}" width="800" height="575" alt="husky"> <br>
