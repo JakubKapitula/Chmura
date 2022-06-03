@@ -1,0 +1,20 @@
+{% extends "index2.html" %}
+{% block title %}rest{% endblock %}
+{% set active_page = "rest" -%}
+{% block body %}
+<h1>Informacje o piosenkach</h1>
+<form action="" method="POST">
+<select name="Nr">
+  <option>Piosenka1</option>
+  <option>Piosenka2</option>
+  <option>Piosenka3</option>
+  <option>Piosenka4</option>
+</select>
+<button type='submit'>Send</button>
+</form>
+{% if data1 %}
+{{data1}}</br>
+{{data2}}</br>
+{{data3}}</br>
+{% endif %}
+{% endblock %}
