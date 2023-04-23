@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Galeria nr 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    {% extends "index2.html" %}
+    {%  block title %} Galeria {% endblock %} {% set active_page = "index2.html" -%}
+</head>
+{% block body %}
+<h1 class="napis">Moje portfolio</h1>
+<div class="container">
+{#    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">#}
+
+    <div class="photo1">
+        <img src="{{ url_for('static', filename= 'photo1.jpg') }}" width="800" height="575" alt="Animal"> <br>
+    </div>
+
+    <div class="photo2">
+        <img src="{{ url_for('static', filename= 'photo2.jpg') }}" width="800" height="575" alt="Animal"> <br>
+    </div>
+
+    <div class="photo3">
+        <img src="{{ url_for('static', filename= 'photo3.jpg') }}" width="800" height="575" alt="Animal"> <br>
+    </div>
+
+
+</div>
+
+{% endblock %}
+</html>
